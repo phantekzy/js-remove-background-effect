@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Comparison Slider</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Image comparison container -->
+    <div class="img-box" id="box">
+      
+      <!-- Background (after) image -->
+      <img src="img/transparent.png" alt="After Image" width="100%">
+
+      <!-- Foreground (before) image overlay -->
+      <div class="img-wrap" id="wrap">
+        <img src="img/original.jpg" id="origins" alt="Before Image">
+      </div>
+
+      <!-- Divider line with draggable arrows -->
+      <span id="line">
+        <img src="img/arrow.png" class="arrow" alt="Drag Arrow">
+      </span>
+    </div>
+  </div>
+</body>
+</html>
+

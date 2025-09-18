@@ -1,0 +1,56 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3fbff;
+}
+
+/* Main container for both images */
+.img-box {
+  position: relative;
+  width: 60%;
+  margin: auto;
+  line-height: 0;
+  background-image: url(img/background.png);
+  overflow: hidden;
+}
+
+/* Foreground (before image) wrapper */
+.img-wrap {
+  width: 250px;              /* Initial visible width */
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+/* Divider line between images */
+#line {
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: 250px;               /* Matches initial .img-wrap width */
+  top: 0;
+  cursor: ew-resize;         /* Horizontal resize cursor */
+}
+
+/* Arrow icon inside divider line */
+.arrow {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  margin-left: -20px;        /* Centers horizontally */
+  margin-top: -20px;         /* Centers vertically */
+}
+
